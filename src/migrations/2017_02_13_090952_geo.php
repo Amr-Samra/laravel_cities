@@ -20,10 +20,10 @@ class Geo extends Migration
                 $table->integer('right')->nullable();
                 $table->integer('depth')->default(0);
                 // $table->integer('geoid');
-                $table->char('name', 60);
-                $table->json('alternames');
-                $table->char('country', 2);
-                $table->char('level', 10);
+                $table->string('name', 60);
+                $table->text('alternames');
+                $table->string('country', 2);
+                $table->string('level', 10);
                 $table->bigInteger('population');
                 $table->decimal('lat',9,6);
                 $table->decimal('long',9,6);
